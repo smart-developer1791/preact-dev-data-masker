@@ -1,0 +1,23 @@
+{
+  "sourceName": "sample-customers.csv",
+  "sourceFormat": "csv",
+  "fields": ["customer_id", "first_name", "last_name", "email", "phone", "address", "ip_address", "loyalty_tier", "lifetime_value", "card_reference"],
+  "rows": [
+    { "customer_id": "cus_1001", "first_name": "Maya", "last_name": "Chen", "email": "maya.chen@example.com", "phone": "+44 7700 900121", "address": "18 Cedar Street", "ip_address": "198.51.100.21", "loyalty_tier": "Gold", "lifetime_value": "4820.50", "card_reference": "4512123412347788" },
+    { "customer_id": "cus_1002", "first_name": "Owen", "last_name": "Brooks", "email": "owen.brooks@example.com", "phone": "+1 202 555 0148", "address": "72 Market Avenue", "ip_address": "203.0.113.18", "loyalty_tier": "Silver", "lifetime_value": "1380.00", "card_reference": "5555444433331111" },
+    { "customer_id": "cus_1003", "first_name": "Priya", "last_name": "Raman", "email": "priya.raman@example.com", "phone": "+91 98765 43210", "address": "4 Lake View Road", "ip_address": "192.0.2.44", "loyalty_tier": "Gold", "lifetime_value": "6204.20", "card_reference": "4111111111119032" },
+    { "customer_id": "cus_1004", "first_name": "Leo", "last_name": "Martins", "email": "leo.martins@example.com", "phone": "+351 912 345 678", "address": "9 Aurora Lane", "ip_address": "198.51.100.73", "loyalty_tier": "Bronze", "lifetime_value": "442.90", "card_reference": "4000000000002197" },
+    { "customer_id": "cus_1005", "first_name": "Sofia", "last_name": "Novak", "email": "sofia.novak@example.com", "phone": "+48 600 700 800", "address": "31 River Walk", "ip_address": "203.0.113.92", "loyalty_tier": "Silver", "lifetime_value": "2118.40", "card_reference": "6011111111118824" },
+    { "customer_id": "cus_1006", "first_name": "Amir", "last_name": "Haddad", "email": "amir.haddad@example.com", "phone": "+971 50 123 4567", "address": "55 Harbor Street", "ip_address": "192.0.2.108", "loyalty_tier": "Gold", "lifetime_value": "7544.10", "card_reference": "3530111333306127" }
+  ],
+  "rules": [
+    { "id": "rule-customer", "field": "customer_id", "strategy": "tokenize", "enabled": true },
+    { "id": "rule-first", "field": "first_name", "strategy": "tokenize", "enabled": true },
+    { "id": "rule-last", "field": "last_name", "strategy": "tokenize", "enabled": true },
+    { "id": "rule-email", "field": "email", "strategy": "email-alias", "enabled": true },
+    { "id": "rule-phone", "field": "phone", "strategy": "last-four", "enabled": true },
+    { "id": "rule-address", "field": "address", "strategy": "redact", "enabled": true },
+    { "id": "rule-ip", "field": "ip_address", "strategy": "hash", "enabled": true },
+    { "id": "rule-card", "field": "card_reference", "strategy": "last-four", "enabled": true }
+  ]
+}

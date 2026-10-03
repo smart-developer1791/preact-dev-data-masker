@@ -1,0 +1,7 @@
+customer_id,first_name,last_name,email,phone,address,ip_address,loyalty_tier,lifetime_value,card_reference
+cus_1001,Maya,Chen,maya.chen@example.com,+44 7700 900121,18 Cedar Street,198.51.100.21,Gold,4820.50,4512123412347788
+cus_1002,Owen,Brooks,owen.brooks@example.com,+1 202 555 0148,72 Market Avenue,203.0.113.18,Silver,1380.00,5555444433331111
+cus_1003,Priya,Raman,priya.raman@example.com,+91 98765 43210,4 Lake View Road,192.0.2.44,Gold,6204.20,4111111111119032
+cus_1004,Leo,Martins,leo.martins@example.com,+351 912 345 678,9 Aurora Lane,198.51.100.73,Bronze,442.90,4000000000002197
+cus_1005,Sofia,Novak,sofia.novak@example.com,+48 600 700 800,31 River Walk,203.0.113.92,Silver,2118.40,6011111111118824
+cus_1006,Amir,Haddad,amir.haddad@example.com,+971 50 123 4567,55 Harbor Street,192.0.2.108,Gold,7544.10,3530111333306127
